@@ -1,0 +1,184 @@
+function datecal(){
+    var list=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+    var dateobj=new Date();
+    var getcurrentday=dateobj.getDay();
+    var getcurrenthour=dateobj.getHours();
+    var getcurrentseconds=dateobj.getSeconds();
+    var getcurrentminutes=dateobj.getMinutes();
+    var pmoram=getcurrenthour>=12?"pm":"am";
+    var s=`Today is :${list[getcurrentday]}
+           Current time is : ${getcurrenthour} ${pmoram} : ${getcurrentminutes}: ${getcurrentseconds}
+           `;
+    console.log(s);
+}
+datecal();
+
+VM1654:12 Today is :wednesday
+           Current time is : 12 pm : 59: 37
+           
+undefined
+//2nd problem 
+undefined
+function datediff()
+{
+    var getmonths=
+VM1827:3 Uncaught SyntaxError: Unexpected end of input
+function datediff()
+{
+    var getmonths=
+VM1831:3 Uncaught SyntaxError: Unexpected end of input
+function datediff(){
+    var date=new Date();
+    var getmonth=date.getMonth();
+    var getyear=date.getFullYear();
+    var getdate=date.getDate();
+    var s=`${getmonth} -${getdate}-${getyear},${getmonth}/${getdate}/${getyear} or ${getdate}-${getmonth}-${getyear},${getdate}/${getmonth}/${getyear}`;
+    console.log(s);
+}
+    
+undefined
+datediff();
+VM2173:7 5 -28-2023,5/28/2023 or 28-5-2023,28/5/2023
+undefined
+function datediff(){
+    var date=new Date();
+    var getmonth=date.getMonth();
+    var getyear=date.getFullYear();
+    var getdate=date.getDate();
+    var s=`${getmonth}-${getdate}-${getyear},${getmonth}/${getdate}/${getyear} or ${getdate}-${getmonth}-${getyear},${getdate}/${getmonth}/${getyear}`;
+    console.log(s);
+}
+undefined
+datediff();
+VM2206:7 5-28-2023,5/28/2023 or 28-5-2023,28/5/2023
+undefined
+//3rd question
+undefined
+function calculateArea(){
+    let length=parseInt(promt("enter the value of length");
+VM2487:2 Uncaught SyntaxError: missing ) after argument list
+function calculateArea(){
+    let length=parseInt(promt("enter the value of length");
+    let breadth=parseInt(promt("enter the value of breadth");
+    
+VM2551:2 Uncaught SyntaxError: missing ) after argument list
+function calculateArea(){
+    let length=parseInt(promt("enter the value of length");
+    let breadth=parseInt(promt("enter the value of breadth");
+    console.log("area is"+length*breadth);}
+calculateArea();
+VM2700:2 Uncaught SyntaxError: missing ) after argument list
+function calculateArea(){
+    let length=parseInt(promt("enter the value of length"));
+    let breadth=parseInt(promt("enter the value of breadth"));
+      console.log("area is"+length*breadth);}
+calculateArea();
+VM2718:2 Uncaught ReferenceError: promt is not defined
+    at calculateArea (<anonymous>:2:16)
+    at <anonymous>:5:1
+calculateArea @ VM2718:2
+(anonymous) @ VM2718:5
+function calculateArea(){
+    let length=parseInt(prompt("enter the value of length"));
+    let breadth=parseInt(prompt("enter the value of breadth"));
+      console.log("area is"+length*breadth);}
+calculateArea();
+VM2730:4 area is200
+undefined
+//4th program
+undefined
+function rearrange(){
+    var s="brainmentors";
+    for(var i=s.length()-1,i>=0;i--){
+        var pos=s[i];
+        var s1=s.slice(0,i-1);
+        console.log(s1+pos);}
+}
+rearrange();
+        
+VM3145:3 Uncaught SyntaxError: Unexpected token '>='
+function rearrange(){
+    var s="brainmentors";
+    for(var i=s.length()-1,i>=0;i--){
+        var pos=s.at(i);
+        var s1=s.slice(0,i-1);
+        console.log(s1+pos);}
+}
+rearrange();
+VM3167:3 Uncaught SyntaxError: Unexpected token '>='
+function rearrange(){
+    var s="brainmentors";
+    for(var i=s.length()-1;i>=0;i--){
+        var pos=s.at(i);
+        var s1=s.slice(0,i-1);
+        console.log(s1+pos);}
+}
+rearrange();
+VM3174:3 Uncaught TypeError: s.length is not a function
+    at rearrange (<anonymous>:3:17)
+    at <anonymous>:8:1
+rearrange @ VM3174:3
+(anonymous) @ VM3174:8
+function rearrange(){
+    var s="brainmentors";
+    for(var i=s.length-1;i>=0;i--){
+        var pos=s.at(i);
+        var s1=s.slice(0,i-1);
+        console.log(s1+pos);}
+}
+rearrange();
+VM3181:6 brainmentos
+VM3181:6 brainmentr
+VM3181:6 brainmeno
+VM3181:6 brainmet
+VM3181:6 brainmn
+VM3181:6 braine
+VM3181:6 braim
+VM3181:6 bran
+VM3181:6 bri
+VM3181:6 ba
+VM3181:6 r
+VM3181:6 brainmentorb
+undefined
+function rearrange(){
+    var s="brainmentors";
+    for(var i=s.length-1;i>=0;i--){
+        var pos=s.at(i);
+        var s1=s.slice(0,i-1);
+        console.log(pos+s1);}
+}
+rearrange();
+VM3206:6 sbrainmento
+VM3206:6 rbrainment
+VM3206:6 obrainmen
+VM3206:6 tbrainme
+VM3206:6 nbrainm
+VM3206:6 ebrain
+VM3206:6 mbrai
+VM3206:6 nbra
+VM3206:6 ibr
+VM3206:6 ab
+VM3206:6 r
+VM3206:6 bbrainmentor
+undefined
+function rearrange(){
+    var s="brainmentors";
+    for(var i=s.length-1;i>=0;i--){
+        var pos=s.at(i);
+        var s1=s.slice(0,i-1);
+        console.log(pos+s1);}
+}
+rearrange();
+VM3208:6 sbrainmento
+VM3208:6 rbrainment
+VM3208:6 obrainmen
+VM3208:6 tbrainme
+VM3208:6 nbrainm
+VM3208:6 ebrain
+VM3208:6 mbrai
+VM3208:6 nbra
+VM3208:6 ibr
+VM3208:6 ab
+VM3208:6 r
+VM3208:6 bbrainmentor
+undefined

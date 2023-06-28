@@ -1,0 +1,23 @@
+//5.WAP to find out if 1st January will be a Sunday between 2000 and 2030
+var count=0;
+function helper(day,year,month,date,check){
+    var list=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var datefinal=new Date(year,month,date);
+      if(day===list[datefinal.getDay()])
+      {
+          count++;
+      }
+}
+function datecal(){
+    var day='Sunday';
+    var month=0;
+    var date=1;
+    for(var year=2000;year<=2030;year++)
+        {
+             var ans=helper(day,year,month,date);
+            
+        }
+    console.log(count);
+}
+datecal();
+VM265:20 4

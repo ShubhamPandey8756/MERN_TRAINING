@@ -1,0 +1,7 @@
+WAP to print area and perimeter of rectangle , taking input from the user , using prompt
+
+function calculateArea(){
+    let length=parseInt(prompt("enter the value of length"));
+    let breadth=parseInt(prompt("enter the value of breadth"));
+      console.log("area is"+length*breadth);}
+calculateArea();

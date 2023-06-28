@@ -1,0 +1,34 @@
+4.WAP to rotate the string ‘brainmentors in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.
+
+input  = brainmentors
+
+output = sbrainmentor
+
+
+function rotate(){
+    var name="brainmentors";
+    var check=name;
+    var j=check.length;
+    for(var i=0;i<j;i++){
+        var last=check.charAt(j-1);
+        var first=check.slice(0,j-1);
+        var s=last.concat(first);
+        check=s;
+        console.log(check);
+    }
+    }
+rotate();
+
+output:-
+VM1825:10 sbrainmentor
+VM1825:10 rsbrainmento
+VM1825:10 orsbrainment
+VM1825:10 torsbrainmen
+VM1825:10 ntorsbrainme
+VM1825:10 entorsbrainm
+VM1825:10 mentorsbrain
+VM1825:10 nmentorsbrai
+VM1825:10 inmentorsbra
+VM1825:10 ainmentorsbr
+VM1825:10 rainmentorsb
+VM1825:10 brainmentors
