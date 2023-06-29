@@ -1,0 +1,39 @@
+Write a JS Function to validate Email Address
+Must contains @
+Must ends with .com/.org/.edu
+
+
+function check(x){
+    if(x.indexOf('@')!==-1){
+        console.log("@walacalled");
+        return true; 
+    }
+       
+    else{
+        console.log("@not called");
+        return false;
+    }
+}
+function checktop(mail){
+    if(mail.indexOf('.com')!==-1||mail.indexOf('.in')!==-1||mail.indexOf('.edu')!==-1||mail.indexOf('.org')!==-1)
+    {
+        console.log("called");
+        return true;
+    }
+    else{
+        console.log("not called");
+        return false;
+    }
+}
+function mailvalidate(){
+    var mail=prompt("enter mail");
+    var ans=check(mail);
+    var ans2=checktop(mail);
+    if(ans&&ans2){
+        console.log("valid mail");
+    }
+     else{
+         console.log("invalid mail");
+         }
+}
+mailvalidate();

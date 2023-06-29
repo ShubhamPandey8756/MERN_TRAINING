@@ -1,0 +1,16 @@
+Write a JS Function to validate Phone Number 
+Only number and must be 10 digit long
+
+function validatephone(){
+    var x=prompt("enter the number");
+    var len=x.length;
+    var y=parseInt(x);
+   if(isNaN(y)){
+       console.log("invalid");
+   }
+   else if(len===10){
+        console.log("number is valid");
+    }
+    
+}
+validatephone();

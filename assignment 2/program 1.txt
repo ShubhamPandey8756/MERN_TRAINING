@@ -1,0 +1,31 @@
+Write a JavaScript function that Print Sum of Even Place and Odd Place Digit
+
+E.g num = 2914
+O/p Even Place (9+4)
+Odd Place 2+1
+
+
+function find(){
+   var n=parseInt(prompt("enter the value of n"));
+    var i=0;
+    var even=0;
+    var odd=0;
+   while(n!=0)
+       {
+          if(i%2==0){
+              var d=n%10;
+              even+=d;
+          }
+           else{
+              // console.log(i);
+               var d1=n%10;
+               odd+=d1;
+           }
+           i++;
+           n=parseInt(n/10);
+       }
+    console.log("Even Sum is"+even);
+    
+    console.log("Odd Sum is"+odd);
+}
+find();
