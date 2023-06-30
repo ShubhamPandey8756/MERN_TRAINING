@@ -5,6 +5,7 @@ For example: Mary is an anagram of Army
 
 function anagram(x,y){
     var p=false;
+    if(x.length!==y.length)return false;
     for( var i=0;i<x.length;i++){
        var n=x.charAt(i);
        if(y.indexOf(n)===-1) 
