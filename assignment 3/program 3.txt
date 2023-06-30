@@ -1,0 +1,34 @@
+3.Given two strings, return true if they are anagrams of one another
+
+For example: Mary is an anagram of Army
+
+
+function anagram(x,y){
+    var p=false;
+    for( var i=0;i<x.length;i++){
+       var n=x.charAt(i);
+       if(y.indexOf(n)===-1) 
+       {
+          p=false; 
+       }
+        else{
+        p=true;
+        }
+    }
+    return p;
+}
+function mainanagram(x,y,anagram)
+{
+    if(anagram(s1,s2)){
+       console.log("true"); 
+    }
+    else{
+        console.log("false");
+    }
+}
+   var s1=prompt("string1");
+    
+   var s2=prompt("string2");
+  mainanagram(s1,s2,anagram);
+VM2305:18 true
+undefined

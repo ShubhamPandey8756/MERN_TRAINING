@@ -1,0 +1,15 @@
+15. Write a function to find the maximum and minimum elements in an array.
+
+function maxmin(arr){
+   arr=arr.sort(function(a,b){return a-b});
+   var max=arr[arr.length-1];
+   var min=arr[0];
+   console.log("max is:"+max+"min is:"+min); 
+}
+
+undefined
+var arr=[10,20,30,40,50];
+undefined
+maxmin(arr);
+VM2721:5 max is:50min is:10
+undefined

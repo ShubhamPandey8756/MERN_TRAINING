@@ -1,0 +1,26 @@
+2 . Create a function Named Triangle which takes 3 parameters, say A, B and C denoting the 3 sides of a triangle.
+Use Callback function, create a method to check if the triangle is Equilateral or not.
+
+
+Output:
+"true" if the triangle is equilateral and "false" if its not.
+function check(num1,num2,num3){
+    if(num1==num2&&num2==num3){
+        return true;
+    }
+}
+function traingle(x,y,z,check){
+  
+   if(check(x,y,z)){console.log("true");}
+    else{
+        console.log("false");
+    }
+}
+   var x=parseInt(prompt("side1"));
+    
+   var y=parseInt(prompt("side2"));
+    
+   var z=parseInt(prompt("side3"));
+traingle(x,y,z,check);
+VM1501:8 true
+undefined

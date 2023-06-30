@@ -1,0 +1,71 @@
+
+4. Create a function Employee, having id, name, basic_Salary as arguments.
+
+Compute HRA, DA, TA, GS, NS.
+
+HRA is 30% of Basic Salary.
+DA is 10% of Basic Salary.
+TA is 20% of Basic Salary.
+
+GS = Basic Salary + HRA + DA + TA;
+
+TAX DEDUCTION is 10% of GS.
+
+NS = GS - TAX DEDUCTION.
+
+NOte : Use Basic Salary in Lexical Scope 
+Print salary slip of the employee.
+
+
+
+function salaryslip(id,name,basic_salary){
+    function hra(){
+        
+        return .30*basic_salary;
+    }
+     function da(){
+        
+        return .10*basic_salary;
+    }
+     function ta(){
+        
+        return .02*basic_salary;
+    }
+     function gs(){
+        
+        return basic_salary+hra()+da()+ta();
+    }
+     function taxdeduction(){
+         
+         return (0.10*gs());
+     }
+     
+     function ns(){
+         
+        return gs()-taxdeduction();
+    }
+    // return [hra,da,ta,gs,taxdeduction,ns];
+    console.log("hra is:"+hra());
+    console.log("da is:"+da());
+    console.log("Ta is:"+ta());
+    console.log("gs is:"+gs());
+    console.log("taxdeduction is:"+taxdeduction());
+    console.log("ns is:"+ns());
+    
+}
+var id=parseInt(prompt("enter the id"));
+var name=prompt("enter name");
+var basic_salary=parseInt(prompt("enter the basic salary"));
+// for(var i=0;i<6;i++){
+//   console.log(salaryslip(id,name,basic_salary)[i]());  
+// }
+console.log("name and id is:"+name+" "+id);
+salaryslip(id,name,basic_salary);
+
+VM341:42 name and id is:shubham 21
+VM341:28 hra is:1500
+VM341:29 da is:500
+VM341:30 Ta is:100
+VM341:31 gs is:7100
+VM341:32 taxdeduction is:710
+VM341:33 ns is:6390
