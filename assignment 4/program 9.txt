@@ -1,0 +1,23 @@
+// 9.Write a function to find the intersection of two arrays (common elements between the two arrays).
+
+// ex:- arr1 = [2,4,1,7,4,2] , arr2 = [5,1,4,7,3,1];
+
+// output = [1,4,7]
+
+function intersection(arr1,arr2){
+    var s1=new Set(arr1);
+    var arr3=[...s1];
+    var s2=new Set(arr2);
+    var arr4=[...s2];
+    var s=[];
+    for(var i of arr4){
+        if(arr3.includes(i)){
+            s.push(i);
+        }
+    }
+    console.log(s);
+}
+var arr1 = [2,4,1,7,4,2];
+var arr2=  [5,1,4,7,3,1];
+intersection(arr1,arr2);
+VM38:17 (3) [1, 4, 7]

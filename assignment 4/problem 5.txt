@@ -1,0 +1,24 @@
+//5th program
+undefined
+// Write a function to reverse the order of elements in an array.
+// don't Use reverse() Method 
+// ex:- var arr = ['a','b','c','d','e','f']
+			
+// 		output = ['f','e','d','c','b','a']
+
+
+
+function reverse (s){
+    var arr=s.split('');
+    var len=arr.length;
+    var ans=[];
+    for(var r=len-1;r>=0;r--)
+        {
+           ans.push(arr[r]);
+        }
+    console.log(ans);
+    
+}
+var s=prompt("enter in string");
+reverse(s);
+VM2386:9 (12) ['s', 'r', 'o', 't', 'n', 'e', 'm', 'n', 'i', 'a', 'r', 'b']

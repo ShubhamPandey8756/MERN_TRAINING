@@ -1,0 +1,9 @@
+
+// 2.Reverse a given string using reverse() method 
+// input = "BrainMentors"
+// output = "srotnemniarB"
+
+var str="brainmentors";
+var s=str.split('');
+s.reverse().join('');
+'srotnemniarb'

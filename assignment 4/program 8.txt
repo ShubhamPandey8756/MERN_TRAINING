@@ -1,0 +1,21 @@
+// 8.Write a function to rotate an array by a given number of steps to the right.
+
+// ex:- arr = [1,2,3,4,5];
+// 		step = 2;
+
+
+function rotate(arr,j){
+    var len=arr.length;
+    var arr1=[];
+    var i;
+    for(i=len-1;i>len-1-j;i--){
+       arr1.push(arr[i]); 
+    }
+    for(var k=0;k<len-j;k++){
+        arr1.push(arr[k]);
+    }
+    console.log(arr1);
+}
+var arr=[1,2,3,4,5];
+ rotate(arr,2);
+VM80:11 (5) [5, 4, 1, 2, 3]

@@ -1,0 +1,16 @@
+
+6. Write a function to remove a specific element from an array.
+
+	arr = [1,2,3,4,5];
+	remove = 3
+
+	output :- [1,2,4,5]
+
+function reduce(s,r){
+  var arr=s.split(''); 
+  arr=arr.filter(e=>e!=r);
+console.log(arr);
+}
+var s=prompt("enter in string");
+var r=prompt("enter remove ele");
+reduce(s,r);
